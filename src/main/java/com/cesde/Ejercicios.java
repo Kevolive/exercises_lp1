@@ -14,8 +14,15 @@ public class Ejercicios {
     }
     
     public String ejercicio2(double calificacion) {
-       // Implementar solución
-        return "";
+       if (calificacion <3.5) {
+        return "Lo siento usted ha reprobado";
+       } else if (calificacion>=5.0) {
+        return "¡Felicidades! Usted aprobó.";
+       } else {
+        return "Calificación inválida";
+       }
+    
+        
     }
 
     
