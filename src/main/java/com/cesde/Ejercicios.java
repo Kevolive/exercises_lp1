@@ -1,6 +1,9 @@
 package com.cesde;
 
+import java.util.Scanner;
+
 public class Ejercicios {
+    Scanner scanner = new Scanner(System.in);
     
     public String ejercicio1(int num1, int num2) {
         if (num1>num2) {
@@ -14,10 +17,10 @@ public class Ejercicios {
     }
     
     public String ejercicio2(double calificacion) {
-       if (calificacion <3.5) {
-        return "Lo siento usted ha reprobado";
-       } else if (calificacion>=5.0) {
+       if (calificacion >=3.5) {
         return "¡Felicidades! Usted aprobó.";
+       } else if (calificacion<3.5) {
+        return "Lo siento, usted ha reprobado";
        } else {
         return "Calificación inválida";
        }
@@ -26,19 +29,52 @@ public class Ejercicios {
     }
 
     
-    public double ejercicio3(double precio) {
-        // Implementar solución
-        return 0;
+        public double ejercicio3(double precio) {
+        double descuento = (precio >=50000) ? precio *0.1: precio*0.0;
+        double precioFinal = precio - descuento; 
+        if (precio>=50000) {
+
+            
+       return precioFinal;
+    }
+    return precioFinal; }
+
+    public String ejercicio4(int tipoFigura, double ladoCuadrado, double baseTriangulo, double alturaTriangulo,
+    double radioCirculo) {
+    
+        double areacuadrado = ladoCuadrado * ladoCuadrado;
+        double areaTriangulo = baseTriangulo * alturaTriangulo / 2;
+        double areaCirculo = 3.1415 * radioCirculo;
+        if (tipoFigura == 1){
+            return  "el area del cuadrado es "+ areacuadrado;
+
+        } else if(tipoFigura == 2){
+            return  "el area del triangulo es "+ areaTriangulo;
+
+        } else if (tipoFigura == 3) {
+            return  "el area del circulo es "+ areaCirculo;
+        }
+        return "Tipo de figura no es válida.";
     }
     
-    public String ejercicio4(int tipoFigura, double ladoCuadrado, double baseTriangulo, double alturaTriangulo,
-            double radioCirculo) {
-        // Implementar solución
-        return "";
-    }
+    
     
     public int ejercicio5(int num1, int num2, int num3) {
-        // Implementar solución
-        return 0;
+        if (num1<num2 && num1<num3) {
+            return num1;
+        } else if (num2<num3 && num2<num1) {
+            return num2;
+        } else {
+            return num3;
+        }
+        
+    }
+
+    public Scanner getScanner() {
+        return scanner;
+    }
+
+    public void setScanner(Scanner scanner) {
+        this.scanner = scanner;
     }
 }
