@@ -17,7 +17,7 @@ public class Main {
         System.out.println("-------------------------------------------------");
 
         System.out.println("Ejercicio 4");
-        System.out.println(ejercicios.ejercicio4(2, 10, 20, 5, 12));
+        System.out.println(ejercicios.ejercicio4(4, 0, 0, 0, 12));
         System.out.println("-------------------------------------------------"); 
 
         System.out.println("Ejercicio 5");

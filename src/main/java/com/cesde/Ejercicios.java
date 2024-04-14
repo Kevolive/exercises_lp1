@@ -42,19 +42,32 @@ public class Ejercicios {
     public String ejercicio4(int tipoFigura, double ladoCuadrado, double baseTriangulo, double alturaTriangulo,
     double radioCirculo) {
     
-        double areacuadrado = ladoCuadrado * ladoCuadrado;
-        double areaTriangulo = baseTriangulo * alturaTriangulo / 2;
-        double areaCirculo = 3.1415 * radioCirculo;
-        if (tipoFigura == 1){
-            return  "el area del cuadrado es "+ areacuadrado;
+        switch (tipoFigura) {
+            case 1:
+            System.out.println("El área de la figura es: " + (ladoCuadrado*ladoCuadrado));
+            break;
+            case 2: 
+            System.out.println("El área de la figura es: " + (baseTriangulo*alturaTriangulo)/2);
+            break;
+            case 3: 
+            System.out.println("El área de la figura es: " + (3.1416 * radioCirculo));
+            break;
+            default:
+            System.out.println("Tipo de figura no válida");
+        } return "";
+        // double areacuadrado = ladoCuadrado * ladoCuadrado;
+        // double areaTriangulo = baseTriangulo * alturaTriangulo / 2;
+        // double areaCirculo = 3.1415 * radioCirculo;
+        // if (tipoFigura == 1){
+        //     return  "el area del cuadrado es "+ areacuadrado;
 
-        } else if(tipoFigura == 2){
-            return  "el area del triangulo es "+ areaTriangulo;
+        // } else if(tipoFigura == 2){
+        //     return  "el area del triangulo es "+ areaTriangulo;
 
-        } else if (tipoFigura == 3) {
-            return  "el area del circulo es "+ areaCirculo;
-        }
-        return "Tipo de figura no es válida.";
+        // } else if (tipoFigura == 3) {
+        //     return  "el area del circulo es "+ areaCirculo;
+        // }
+        // return "Tipo de figura no es válida.";
     }
     
     
