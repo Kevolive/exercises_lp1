@@ -55,20 +55,7 @@ public class Ejercicios {
             default:
             System.out.println("Tipo de figura no válida");
         } return "";
-        // double areacuadrado = ladoCuadrado * ladoCuadrado;
-        // double areaTriangulo = baseTriangulo * alturaTriangulo / 2;
-        // double areaCirculo = 3.1415 * radioCirculo;
-        // if (tipoFigura == 1){
-        //     return  "el area del cuadrado es "+ areacuadrado;
-
-        // } else if(tipoFigura == 2){
-        //     return  "el area del triangulo es "+ areaTriangulo;
-
-        // } else if (tipoFigura == 3) {
-        //     return  "el area del circulo es "+ areaCirculo;
-        // }
-        // return "Tipo de figura no es válida.";
-    }
+        }
     
     
     
